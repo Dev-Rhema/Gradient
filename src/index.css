@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.custom-shadow:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.shadow-top {
+  box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.1);
+}
