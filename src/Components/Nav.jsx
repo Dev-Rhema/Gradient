@@ -54,14 +54,14 @@ export default function Nav() {
   ];
 
   return (
-    <div className="fixed bg-white h-screen  w-[300px] flex flex-col justify-between box-border p-5 text-[18px]  z-50 max-lg:hidden max-xl:w-[100px] max-xl:items-center  ">
+    <div className="fixed bg-white h-screen w-[300px] flex flex-col justify-between box-border p-5 pb-32 text-[18px]  z-50 max-lg:hidden max-xl:w-[100px] max-xl:items-center  ">
       <span>
         <img src={logo} alt="" className="w-[200px]  max-xl:hidden" />
         <img src={gradient_icon} alt="" className="hidden max-xl:block" />
       </span>
 
-      <nav className="row-span-2 ">
-        <p className="max-xl:hidden">Menu</p>
+      <nav>
+        <p className="max-xl:hidden mb-3">Menu</p>
         {NAVLINKS.map((navlink) => (
           <NavLink
             key={navlink.path}
