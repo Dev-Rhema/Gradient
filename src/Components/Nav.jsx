@@ -54,32 +54,37 @@ export default function Nav() {
   ];
 
   return (
-    <div className="fixed bg-white h-screen w-[300px] flex flex-col justify-between box-border p-5 pb-32 text-[18px]  z-50 max-lg:hidden max-xl:w-[100px] max-xl:items-center  ">
-      <span>
-        <img src={logo} alt="" className="w-[200px]  max-xl:hidden" />
-        <img src={gradient_icon} alt="" className="hidden max-xl:block" />
-      </span>
+    <div className="fixed bg-white h-screen w-[300px] flex flex-col justify-between box-border p-5  text-[18px]  z-50 max-lg:hidden max-xl:w-[100px] max-xl:items-center  ">
+      <div className="flex flex-col gap-12">
+        <span>
+          <img src={logo} alt="" className="w-[200px]  max-xl:hidden" />
+          <img src={gradient_icon} alt="" className="hidden max-xl:block" />
+        </span>
 
-      <nav>
-        <p className="max-xl:hidden mb-3">Menu</p>
-        {NAVLINKS.map((navlink) => (
-          <NavLink
-            key={navlink.path}
-            to={`/${navlink.path}`}
-            className={({ isActive }) =>
-              isActive
-                ? "text-black bg-[#f2f2f2] flex items-center w-full rounded-[10px]  no-underline pl-[10px] p-[10px] mb-2"
-                : "flex items-center w-full rounded-[10px] text-[#757575] no-underline pl-[10px] p-[10px] bg-transparent mb-2 hover:bg-[#f8f8f8]"
-            }
-          >
-            <span className="flex justify-center items-center gap-3 text-xl ">
-              <img src={navlink.icon} alt="" className="size-5 max-xl:size-6" />
-              <p className="max-xl:hidden">{navlink.label}</p>
-            </span>
-          </NavLink>
-        ))}
-      </nav>
-
+        <nav>
+          <p className="max-xl:hidden mb-3">Menu</p>
+          {NAVLINKS.map((navlink) => (
+            <NavLink
+              key={navlink.path}
+              to={`/${navlink.path}`}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-black bg-[#f2f2f2] flex items-center w-full rounded-[10px]  no-underline pl-[10px] p-[10px] mb-2"
+                  : "flex items-center w-full rounded-[10px] text-[#757575] no-underline pl-[10px] p-[10px] bg-transparent mb-2 hover:bg-[#f8f8f8]"
+              }
+            >
+              <span className="flex justify-center items-center gap-3 text-xl ">
+                <img
+                  src={navlink.icon}
+                  alt=""
+                  className="size-5 max-xl:size-6"
+                />
+                <p className="max-xl:hidden">{navlink.label}</p>
+              </span>
+            </NavLink>
+          ))}
+        </nav>
+      </div>
       <nav className="flex flex-col gap-[12px] text-xl ">
         {SOCIALS.map((social) => (
           <span className="flex justify-start bg items-center gap-3 hover:cursor-pointer mb-2">
