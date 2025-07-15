@@ -58,7 +58,7 @@ export default function Rewards() {
       <section className="flex flex-col gap-6 ">
         <div className="p-6 rounded-2xl  bg-white gap-6 flex flex-col ">
           <p>Node Name: </p>
-          <div className="h-[360px] ">
+          <div>
             <RewardsGraph
               labels={[
                 "Jan",
