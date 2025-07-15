@@ -93,7 +93,7 @@ export default function Overview() {
           </div>
         </div>
         <div className="row-span-3 h-full w-full grid-cols-3 grid gap-6 max-md:grid-cols-1 max-md:gap-0">
-          <div className=" h-full w-full col-span-2 rounded-3xl bg-white  border border-[#e4e4e4] p-5 flex flex-col justify-between">
+          <div className=" h-full w-full col-span-2 rounded-3xl bg-white  border border-[#e4e4e4] p-4 flex flex-col justify-between">
             <div>
               <p className="text-2xl flex items-center gap-2 max-md:text-xl max-md:gap-1">
                 Rewards Stats{" "}
@@ -104,7 +104,7 @@ export default function Overview() {
                 />
               </p>
             </div>
-            <div className="h-[260px] w-full">
+            <div>
               <RewardsGraph
                 labels={[
                   "Jan",

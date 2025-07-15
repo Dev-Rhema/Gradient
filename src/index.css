@@ -12,3 +12,8 @@ button:hover {
 .shadow-top {
   box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.1);
 }
+
+.my-chart-container {
+  background: #fff;
+  border-radius: 12px;
+}
